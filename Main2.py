@@ -21,7 +21,7 @@ with open(filename, "a+", encoding="utf-8", newline="") as f:
     avg_score = 0
     avg_steps = 0
     writer.writerow(["steps", "score", "max_num"])
-    a = [i + 1 for i in range(b)]
+    a = [i for i in range(b)]
     for k in range(game_count):
         T = [score_index[8] * 8 * int(pow(4, 15)) for i in range(b)]
         score_list = []
